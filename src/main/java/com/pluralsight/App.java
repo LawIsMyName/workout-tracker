@@ -79,8 +79,11 @@ public class App {
                 default:
                     System.out.println("Invalid command.");
                     break;
+            }
 
-        } while ();
+        } while (!command.equals("H"));
+
+
 
 
     }
