@@ -57,6 +57,10 @@ public class App {
                     S) Search
                     H) Home
                     """);
+
+            System.out.print("Enter a command: ");
+            command = scanner.nextLine().trim().toUpperCase();
+
         } while ();
 
 
