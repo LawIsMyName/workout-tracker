@@ -111,8 +111,14 @@ public class App {
         pressEnterToContinue();
     }
 
+    private static void searchByType() {
+        System.out.println("TODO: Search by type ");
+    }
+
     private static void searchByName() {
         System.out.println("TODO: Search by name");
+
+        pressEnterToContinue();
     }
 
     private static void addWorkout() {
