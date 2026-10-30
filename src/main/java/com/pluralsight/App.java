@@ -65,14 +65,20 @@ public class App {
             }
 
         } while (!command.equals("H"));
+
+        pressEnterToContinue();
     }
 
     private static void displayFavorites() {
         System.out.println("TODO: display favorites");
+
+        pressEnterToContinue();
     }
 
     private static void displayQuickWorkouts() {
         System.out.println("TODO: display quick workout");
+
+        pressEnterToContinue();
     }
 
     public static void runSearchScreen() {
@@ -109,14 +115,20 @@ public class App {
 //            }
 
         } while (!command.equals("0"));
+
+        pressEnterToContinue();
     }
 
     private static void addWorkout() {
         System.out.println(" TODO: add workout test");
+
+        pressEnterToContinue();
     }
 
     private static void displayAllWorkouts() {
         System.out.println("TODO: display all workouts");
+
+        pressEnterToContinue();
     }
 
     public static void pressEnterToContinue() {
