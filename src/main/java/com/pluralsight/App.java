@@ -61,6 +61,25 @@ public class App {
             System.out.print("Enter a command: ");
             command = scanner.nextLine().trim().toUpperCase();
 
+            switch (command) {
+                case "A":
+                    displayAllWorkouts();
+                    break;
+                case "Q":
+                    displayQuickWorkouts();
+                    break;
+                case "F":
+                    displayFavorites();
+                    break;
+                case "S":
+                    runSearchScreen();
+                    break;
+                case "H":
+                    break;
+                default:
+                    System.out.println("Invalid command.");
+                    break;
+
         } while ();
 
 
