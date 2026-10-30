@@ -66,6 +66,10 @@ public class App {
         } while (!command.equals("H"));
     }
 
+    private static void displayQuickWorkouts() {
+        System.out.println("TODO: display quick workout");
+    }
+
     public static void runSearchScreen() {
         String command;
 
