@@ -47,7 +47,17 @@ public class App {
     public static void runWorkoutsListScreen() {
         String command;
 
-
+        do {
+            System.out.println("""
+                    
+                    === Workouts ===
+                    A) All Workouts
+                    Q) Quick Workouts
+                    F) Favorites
+                    S) Search
+                    H) Home
+                    """);
+        } while ();
 
 
     }
