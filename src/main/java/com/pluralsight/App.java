@@ -59,8 +59,8 @@ public class App {
                 case "Q" -> displayQuickWorkouts();
                 case "F" -> displayFavorites();
                 case "S" -> runSearchScreen();
-                case "H" -> {
-                }
+                case "H" -> System.out.println("Home");
+
                 default -> System.out.println("Invalid command.");
             }
 
@@ -101,8 +101,8 @@ public class App {
                 case "1" -> searchByName();
                 case "2" -> searchByType();
                 case "3" -> searchByLength();
-                case "0" -> {
-                }
+                case "0" -> System.out.println("back to workouts");
+
                 default -> System.out.println("Invalid command.");
             }
 
