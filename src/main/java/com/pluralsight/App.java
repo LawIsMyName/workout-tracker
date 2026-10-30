@@ -111,8 +111,16 @@ public class App {
         pressEnterToContinue();
     }
 
+    private static void searchByLength() {
+        System.out.println("TODO: Search by length");
+
+        pressEnterToContinue();
+    }
+
     private static void searchByType() {
         System.out.println("TODO: Search by type ");
+
+        pressEnterToContinue();
     }
 
     private static void searchByName() {
