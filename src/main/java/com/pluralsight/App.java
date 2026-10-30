@@ -43,4 +43,12 @@ public class App {
         } while (!command.equals("X"));
 
     }
+
+    public static void runWorkoutsListScreen() {
+        String command;
+
+
+
+
+    }
 }
