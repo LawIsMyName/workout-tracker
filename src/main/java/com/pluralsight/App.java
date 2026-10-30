@@ -97,26 +97,22 @@ public class App {
             System.out.print("Enter a command: ");
             command = scanner.nextLine().trim();
 
-//            switch (command) {
-//                case "1":
-//                    searchByName();
-//                    break;
-//                case "2":
-//                    searchByType();
-//                    break;
-//                case "3":
-//                    searchByLength();
-//                    break;
-//                case "0":
-//                    break;
-//                default:
-//                    System.out.println("Invalid command.");
-//                    break;
-//            }
+            switch (command) {
+                case "1" -> searchByName();
+                case "2" -> searchByType();
+                case "3" -> searchByLength();
+                case "0" -> {
+                }
+                default -> System.out.println("Invalid command.");
+            }
 
         } while (!command.equals("0"));
 
         pressEnterToContinue();
+    }
+
+    private static void searchByName() {
+        System.out.println("TODO: Search by name");
     }
 
     private static void addWorkout() {
