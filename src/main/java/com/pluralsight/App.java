@@ -66,6 +66,10 @@ public class App {
         } while (!command.equals("H"));
     }
 
+    private static void displayFavorites() {
+        System.out.println("TODO: display favorites");
+    }
+
     private static void displayQuickWorkouts() {
         System.out.println("TODO: display quick workout");
     }
