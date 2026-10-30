@@ -8,6 +8,7 @@ public class App {
 
     public static void main(String[] args) {
 
+        runHomeScreen();
     }
 
     public static void runHomeScreen() {
@@ -90,22 +91,22 @@ public class App {
             System.out.print("Enter a command: ");
             command = scanner.nextLine().trim();
 
-            switch (command) {
-                case "1":
-                    searchByName();
-                    break;
-                case "2":
-                    searchByType();
-                    break;
-                case "3":
-                    searchByLength();
-                    break;
-                case "0":
-                    break;
-                default:
-                    System.out.println("Invalid command.");
-                    break;
-            }
+//            switch (command) {
+//                case "1":
+//                    searchByName();
+//                    break;
+//                case "2":
+//                    searchByType();
+//                    break;
+//                case "3":
+//                    searchByLength();
+//                    break;
+//                case "0":
+//                    break;
+//                default:
+//                    System.out.println("Invalid command.");
+//                    break;
+//            }
 
         } while (!command.equals("0"));
     }
@@ -116,6 +117,11 @@ public class App {
 
     private static void displayAllWorkouts() {
         System.out.println("TODO: display all workouts");
+    }
+
+    public static void pressEnterToContinue() {
+        System.out.print("Press Enter to go back to the menu...");
+        scanner.nextLine();
     }
 
 }
