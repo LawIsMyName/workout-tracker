@@ -26,18 +26,10 @@ public class App {
             command = scanner.nextLine().trim().toUpperCase();
 
             switch (command) {
-                case "N":
-                    addWorkout();
-                    break;
-                case "W":
-                    runWorkoutsListScreen();
-                    break;
-                case "X":
-                    System.out.println("Goodbye!");
-                    break;
-                default:
-                    System.out.println("Invalid command.");
-                    break;
+                case "N" -> addWorkout();
+                case "W" -> runWorkoutsListScreen();
+                case "X" -> System.out.println("Goodbye!");
+                default -> System.out.println("Invalid command.");
             }
 
         } while (!command.equals("X"));
@@ -62,29 +54,65 @@ public class App {
             command = scanner.nextLine().trim().toUpperCase();
 
             switch (command) {
-                case "A":
-                    displayAllWorkouts();
+                case "A" -> displayAllWorkouts();
+                case "Q" -> displayQuickWorkouts();
+                case "F" -> displayFavorites();
+                case "S" -> runSearchScreen();
+                case "H" -> {
+                }
+                default -> System.out.println("Invalid command.");
+            }
+
+        } while (!command.equals("H"));
+    }
+
+    public static void runSearchScreen() {
+        String command;
+
+        do {
+            System.out.println("""
+                    
+                    === Search ===
+                    1) By Name
+                    2) By Type
+                    3) By Length
+                    0) Back
+                    """);
+
+            System.out.print("Enter a command: ");
+            command = scanner.nextLine().trim();
+
+            switch (command) {
+                case "1":
+                    searchByName();
                     break;
-                case "Q":
-                    displayQuickWorkouts();
+                case "2":
+                    searchByType();
                     break;
-                case "F":
-                    displayFavorites();
+                case "3":
+                    searchByLength();
                     break;
-                case "S":
-                    runSearchScreen();
-                    break;
-                case "H":
+                case "0":
                     break;
                 default:
                     System.out.println("Invalid command.");
                     break;
             }
 
-        } while (!command.equals("H"));
-
-
-
-
+        } while (!command.equals("0"));
     }
+
+    private static void addWorkout() {
+        System.out.println(" TODO: add workout test");
+    }
+
+    private static void displayAllWorkouts() {
+        System.out.println("TODO: display all workouts");
+    }
+
 }
+
+
+
+
+
